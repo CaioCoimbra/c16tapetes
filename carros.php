@@ -174,7 +174,9 @@ switch ($marca) {
         
         
         ?>
-        <button onclick="history.back()">Voltar</button>
+        <div id="main__button--block">
+            <button onclick="history.back()" id="main__button--voltar">Voltar</button>
+        </div>
     </main>
     <?php 
         require 'partes/footer.php';

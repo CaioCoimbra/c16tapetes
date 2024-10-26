@@ -450,19 +450,24 @@ main{
     padding-bottom: 30px;
 }
 
+#main__button--block{
+    display: flex;
+}
+
 #main__button--voltar{
     border-radius: 999rem;
     width: 300px;
     font-weight: bolder;
     height: 35px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #main__button--voltar:hover{
     background-color: black;
     color: white;
     transition: 0.3s;
-    width: 310px;
+    width: 320px;
 }
 
 #invisible{
