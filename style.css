@@ -261,7 +261,8 @@ main{
 #main__tapete--img{
     max-height: 500px; 
     width: 100%; 
-    height: auto; 
+    height: auto;
+    max-width: 645px; 
 }
 
 #main__preco{
@@ -452,6 +453,8 @@ main{
 
 #main__button--block{
     display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
 
 #main__button--voltar{

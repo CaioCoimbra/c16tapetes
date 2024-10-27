@@ -2,27 +2,27 @@
 $modelo = $_GET['modelo'];
 
 function pegarMarcaPeloModelo($modelo) {
-    if ($modelo >= 0 && $modelo < 8) {
+    if ($modelo > 0 && $modelo <= 8) {
         return 1;
-    } elseif ($modelo >= 8 && $modelo < 16) {
+    } elseif ($modelo >= 9 && $modelo <= 16) {
         return 2;
-    } elseif ($modelo >= 16 && $modelo < 22) {
+    } elseif ($modelo >= 17 && $modelo <= 22) {
         return 3;
-    } elseif ($modelo >= 22 && $modelo < 24) {
+    } elseif ($modelo >= 23 && $modelo <= 24) {
         return 4;
-    } elseif ($modelo >= 24 && $modelo < 30) {
+    } elseif ($modelo >= 25 && $modelo <= 30) {
         return 5;
-    } elseif ($modelo >= 30 && $modelo < 33) {
+    } elseif ($modelo >= 31 && $modelo <= 33) {
         return 6;
-    } elseif ($modelo >= 33 && $modelo < 38) {
+    } elseif ($modelo >= 34 && $modelo <= 38) {
         return 7;
-    } elseif ($modelo >= 38 && $modelo < 41) {
+    } elseif ($modelo >= 39 && $modelo <= 41) {
         return 8;
-    } elseif ($modelo >= 41 && $modelo < 44) {
+    } elseif ($modelo >= 42 && $modelo <= 44) {
         return 9;
-    } elseif ($modelo >= 44 && $modelo < 51) {
+    } elseif ($modelo >= 45 && $modelo <= 51) {
         return 10;
-    } elseif ($modelo >= 51) {
+    } elseif ($modelo >= 52) {
         return 11;
     } 
     return null;
@@ -121,23 +121,23 @@ switch ($marca) {
         <?php 
 
         $carroMin = strtolower($marcaCarros);
-        $foto = 'img/carros/'.$carroMin.'/'.($modelo + 1).'.jpg';
+        $foto = 'img/carros/'.$carroMin.'/'.($modelo).'.jpg';
         $logo = 'img/carbrands/'.$carroMin.'.svg';
-
+        $tapete = 'img/carros/'.$carroMin.'/tapetes/'.$modelo.'.jpg';
 
         echo '        
         <div id="main__carros">
             <div id="main__carros--carro">
                 <div id="main__carros--logo">
-                    <img src="'.$logo.'" alt="" height="35px" id="main__carros--img">
+                    <img src="'.$logo.'" alt="" height="50px" id="main__carros--img">
                     <h1 class="main__carros--titulo" id="main__titulo--marca">'.$marcaCarros.'</h1>
                 </div>
                 <div><img src="'.$foto.'" alt="" id="main__carros--model"></div>
-                <h2 class="main__carros--titulo" id="main__titulo-carro">'.$modeloCarros[$modelo - $idCarros] .'</h2>
+                <h2 class="main__carros--titulo" id="main__titulo-carro">'.$modeloCarros[$modelo - $idCarros - 1] .'</h2>
                 <p id="main__carros--paragrafo">Bandeja aplicada somente na base principal do porta malas. Emborrachado antiderrapante copiado do site da probag</p>
             </div>
             <div id="main__carros--tapetes">
-                <img src="00000206.jpg" alt="" id="main__tapete--img">
+                <img src="'.$tapete.'" alt="" id="main__tapete--img">
             </div>
         </div>
         <div id="main__preco">

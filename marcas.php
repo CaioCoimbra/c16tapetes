@@ -93,7 +93,7 @@ switch ($marca) {
             echo 
             '
                 <form action="carros.php" method="get">
-                    <button type="submit" name="modelo" value="'.($i + $idCarros).'" class="main__list--link">
+                    <button type="submit" name="modelo" value="'.($i + $idCarros + 1).'" class="main__list--link">
                         <li class="main__list--item--cars">
                             <img src="'.$foto.'" alt=""  class="main__list--cars">'.($modeloCarros[$i]).'
                         </li>
@@ -103,6 +103,9 @@ switch ($marca) {
         };
         echo "</ul>";
     ?>
+    <div id="main__button--block">
+        <button onclick="history.back()" id="main__button--voltar">Voltar</button>
+    </div>
     </main>
     <?php 
         require 'partes/footer.php';
