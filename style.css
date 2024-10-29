@@ -312,6 +312,17 @@ main{
     font-size: 25px;
 }
 
+#main__preco--gratis{
+    color: green;
+    display: flex;
+    margin: 0;
+    margin-left: 10px;
+}
+
+#main__preco--relatorio{
+    display: flex;
+}
+
 #main__preco--comprar{
     display: flex;
     align-items: center;

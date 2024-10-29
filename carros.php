@@ -142,7 +142,7 @@ switch ($marca) {
         </div>
         <div id="main__preco">
             <div id="main__preco--frete" class="main__preco--bloco">
-                <h1 id="main__preco--titulo">R$ 195,00</h1>
+                <h1 id="main__preco--titulo">R$ 300,00</h1>
                 <p id="main__titulo--cep">CEP</p>
                 <div>
                     <input type="tel" id="main__input--cep" maxlength="10">
@@ -163,9 +163,9 @@ switch ($marca) {
                 </div>
             </div>
             <div id="main__preco--total" class="main__preco--bloco">
-                <div>Produto: <strong>R$195,00</strong></div>
-                <div>Frete:</div>
-                <div>Total:</div> 
+                <div>Produto: <strong>R$300,00</strong></div>
+                <div id="main__preco--relatorio">Frete: <p id="main__preco--gratis"><strong>GRÁTIS</strong></p></div>
+                <div>Total: <strong>R$300,00</strong></div> 
             </div>
             <div id="main__preco--comprar" class="main__preco--bloco">
                 <input type="submit" value="Comprar" id="main__preco--butao">
