@@ -365,11 +365,11 @@ main{
     display: flex;
     list-style-type: none;
     grid-auto-flow: row;
-    gap: 10px;
     margin: 5px 0px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
+    margin-bottom: 30px;
 }
 
 #main__list--pages{
@@ -380,7 +380,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 10px 10px;
     margin: 0;
     font-size: larger;
@@ -399,7 +399,6 @@ main{
     justify-content: center;
     padding: 10px 10px;
     margin: 0;
-    font-size: larger;
     border-radius: 10px;
     width: 150px;
     height: 100px;
@@ -419,6 +418,7 @@ main{
     background-color: white;
     border: none;
     cursor: pointer;
+    padding: 5px;
 }
 
 .main__nav{
@@ -465,7 +465,8 @@ main{
 #main__button--block{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    flex: 1;
+    align-items: center;
 }
 
 #main__button--voltar{

@@ -39,37 +39,100 @@
         </ul>
     </nav>
     <main>
-        <div id="main__carros">
-            <div id="main__carros--carro">
-                <div id="main__carros--logo">
-                    <img src="'.$logo.'" alt="" height="50px" id="main__carros--img">
-                    <h1 class="main__carros--titulo" id="main__titulo--marca">'.$marcaCarros.'</h1>
+        <div class="main__content">
+            <div>
+                <div>
+                    <h2>Proteja seu patrimônio com a bandeja ProBag Confeccionada em Bicamada: Polietileno e
+                        Borracha Sintética.</h2>
                 </div>
-                <div><img src="'.$foto.'" alt="" id="main__carros--model"></div>
-                <h2 class="main__carros--titulo" id="main__titulo-carro">'.$modeloCarros[$modelo - $idCarros - 1] .'</h2>
-                <p id="main__carros--paragrafo">Bandeja aplicada somente na base principal do porta malas. Emborrachado antiderrapante copiado do site da probag</p>
             </div>
-            <div id="main__carros--tapetes">
-                <img src="'.$tapete.'" alt="" id="main__tapete--img">
+            <div>
+                <div>
+                    <h2>Marcas</h2>
+                </div>
+                <ul class="main__list">
+                    <form action="marcas.php" method="get" >
+                        <button type="submit" name="marca" value=1 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/volkswagen.svg" alt="" id="carbrands">Volkswagen
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=2 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/fiat.svg" alt="" id="carbrands">Fiat
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=3 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/honda.svg" alt="" id="carbrands">Honda
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=4 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/nissan.svg" alt="" id="carbrands">Nissan
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=5 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/chevrolet.svg" alt="" id="carbrands">Chevrolet
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=6 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/ford.svg" alt="" id="carbrands">Ford
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=7 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/renault.svg" alt="" id="carbrands">Renault
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=8 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/jeep.svg" alt="" id="carbrands">Jeep
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=9 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/hyundai.svg" alt="" id="carbrands">Hyundai
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=10 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/toyota.svg" alt="" id="carbrands">Toyota
+                            </li>
+                        </button>
+                    </form>
+                    <form action="marcas.php" method="get">
+                        <button type="submit" name="marca" value=11 class="main__list--link">
+                            <li class="main__list--item">
+                                <img src="img/carbrands/chery.svg" alt="" id="carbrands">Chery
+                            </li>
+                        </button>
+                    </form>
+                </ul> 
             </div>
         </div>
-        <div id="main__preco">
-            <div id="main__preco--frete" class="main__preco--bloco">
-                <h1 id="main__preco--titulo">R$ 195,00</h1>
-                <p id="main__titulo--cep">CEP</p>
-                <div>
-                    <input type="tel" id="main__input--cep" maxlength="10">
-                    <input type="submit" value="OK" id="main__button--cep">
-                </div>
-            </div>
-            <div id="main__preco--total" class="main__preco--bloco">
-                <div>Produto: <strong>R$195,00</strong></div>
-                <div id="main__preco--relatorio">Frete: <p id="main__preco--gratis"><strong>GRÁTIS</strong></p></div>
-                <div>Total: <strong>R$195,00</strong></div> 
-            </div>
-            <div id="main__preco--comprar" class="main__preco--bloco">
-                <input type="submit" value="Comprar" id="main__preco--butao">
-            </div>
+        <div id="main__button--block">
+            <button onclick="history.back()" id="main__button--voltar">Voltar</button>
         </div>
     </main>
     <footer>
